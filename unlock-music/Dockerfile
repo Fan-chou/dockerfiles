@@ -17,8 +17,8 @@ RUN set -ex \
         && apk del git \
         && echo "Asia/Shanghai" > /etc/timezone
 
-COPY Caddyfile /etc/
+COPY Caddyfile /root/
 
 ENV TZ=Asia/Shanghai
 
-CMD caddy -quic --conf /etc/Caddyfile
+CMD caddy -quic --conf /root/Caddyfile
