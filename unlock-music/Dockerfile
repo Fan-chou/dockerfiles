@@ -1,7 +1,7 @@
 FROM alpine:3
 MAINTAINER JackChou <dvfanzrfo@gmail.com>
 
-COPY default.conf /root/default.conf
+COPY ./default.conf /root/default.conf
 
 WORKDIR /root
 
