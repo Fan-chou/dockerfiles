@@ -1,6 +1,8 @@
 
-FROM alpine:3
+FROM --platform=${TARGETPLATFORM} alpine:laster
 MAINTAINER JackChou <dvfanzrfo@gmail.com>
+
+ARG TARGETPLATFORM
 
 COPY ./unlock-music/default.conf /root/default.conf
 
